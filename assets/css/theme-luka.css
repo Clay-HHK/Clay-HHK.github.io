@@ -326,6 +326,12 @@ body.theme-luka .institution-logo {
   width: 52px;
   height: 52px;
   flex-shrink: 0;
+  border-radius: 50%;
+  background: #fff;
+  object-fit: contain;
+  padding: 4px;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06);
 }
 
 body.theme-luka .experience-content {
