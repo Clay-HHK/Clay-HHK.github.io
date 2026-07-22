@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Haoke Han - Homepage</title>
-  <meta name="description" content="Haoke Han, undergraduate researcher at Qingdao University working on data mining, privacy protection, and LLM agent memory.">
-  <meta name="keywords" content="Haoke Han, data mining, graph unlearning, privacy protection, privacy auditing, LLM agents, agent memory, Qingdao University">
+  <title>Haoke Han | Evidence-Grounded Agentic AI</title>
+  <meta name="description" content="Haoke Han is an undergraduate researcher working on evidence-grounded scientific agents, trustworthy skill and memory reuse, and evaluation under evolving states.">
+  <meta name="keywords" content="Haoke Han, Agentic AI, Agentic Data Science, Multimodal Scientific Agents, Evidence Grounding, LLM Agents, Skill Learning, Agent Memory, Graph Learning">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,8 +23,8 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="Haoke Han - Homepage">
-  <meta property="og:description" content="Haoke Han, undergraduate researcher at Qingdao University working on data mining, privacy protection, and LLM agent memory.">
+  <meta property="og:title" content="Haoke Han | Evidence-Grounded Agentic AI">
+  <meta property="og:description" content="Haoke Han is an undergraduate researcher working on evidence-grounded scientific agents, trustworthy skill and memory reuse, and evaluation under evolving states.">
   <meta property="og:url" content="https://clay-hhk.github.io/">
   <meta property="og:image" content="https://clay-hhk.github.io/assets/img/avatar.png">
   <meta property="profile:first_name" content="Haoke">
@@ -46,14 +46,19 @@
       "name": "Qingdao University"
     },
     "sameAs": [
-      "https://github.com/Clay-HHK"
+      "https://github.com/Clay-HHK",
+      "https://scholar.google.com/citations?user=g_KO2ksAAAAJ",
+      "https://openreview.net/profile?id=~Haoke_Han1"
     ],
     "knowsAbout": [
-      "Data Mining",
-      "Graph Unlearning",
-      "Privacy Protection",
-      "LLM Agents",
-      "Agent Memory"
+      "Agentic AI",
+      "Agentic Data Science",
+      "Multimodal Scientific Agents",
+      "Evidence-Grounded Reasoning",
+      "Trustworthy Skill Learning",
+      "Agent Memory",
+      "Evaluation under Evolving States",
+      "Graph Learning"
     ]
   }
   </script>
@@ -62,7 +67,11 @@
   <nav class="top-nav">
     <div class="nav-container">
       <div class="nav-left">
-        <a href="./">Home</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#selected">Selected Work</a>
+        <a href="#systems">Systems</a>
+        <a href="#news">News</a>
       </div>
       <div class="nav-right">
         <button id="themeToggle" class="theme-toggle" title="Toggle theme" aria-label="Toggle theme">
@@ -81,11 +90,13 @@
 
         <h1 class="site-name">韩昊珂</h1>
         <p class="site-en-name">Haoke Han</p>
+        <p class="site-role">Undergraduate Researcher · Computer Science · Qingdao University</p>
         <p class="site-email">hanhaoke@qdu.edu.cn</p>
 
         <div class="social-icons">
           <a href="mailto:hanhaoke@qdu.edu.cn" title="Email"><i class="fa-solid fa-envelope"></i></a>
           <a href="https://github.com/Clay-HHK" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://scholar.google.com/citations?user=g_KO2ksAAAAJ" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
           <a href="https://openreview.net/profile?id=~Haoke_Han1" title="OpenReview"><span style="font-weight:700;font-size:14px;letter-spacing:-0.5px;">OR</span></a>
         </div>
       </div>
@@ -93,16 +104,159 @@
 
     <section class="content">
       <div class="section" id="about">
-        <h2 class="section-title">About Me</h2>
+        <p class="hero-thesis">Evidence-Grounded Agentic AI for Scientific Workflows under Evolving States</p>
         <div class="section-body">
-          <p>Hello! I am <strong>Haoke Han (韩昊珂)</strong>, an undergraduate student in Computer Science and Technology at <strong>Qingdao University</strong> (2023 - present). My research spans three directions:</p>
-          <ul>
-            <li><strong>Data Mining &amp; Privacy Protection</strong>: I study how to remove the influence of specific data from trained models, with a focus on graph unlearning in federated and long-tailed settings. A core thread is privacy auditing, using geometric and representation-level signals to verify that unlearning has actually taken effect, rather than taking it on faith.</li>
-            <li><strong>LLM Agents &amp; Agent Memory</strong>: I study how long-horizon coding agents learn from past failures through memory. My current work asks whether a reused memory will cause harm several steps later, not just immediately, and builds calibrated reliability estimates against these deferred consequences, measured by ECE and Brier score on real agent trajectories.</li>
-            <li><strong>Continual Learning &amp; Capability Preservation</strong>: I am interested in how models undergo capability collapse during continual learning, where acquiring new knowledge systematically degrades previously stable abilities. I focus particularly on small models, where limited capacity makes this tension between plasticity and stability more acute.</li>
+          <p>I am an undergraduate researcher in Computer Science at Qingdao University. My research focuses on evidence-grounded agentic systems: how agents form auditable conclusions from multimodal scientific evidence, and how their skills, memory, and intermediate artifacts remain valid as tasks, tools, code, data, and knowledge evolve.</p>
+          <p>I build research systems and evaluation frameworks spanning multimodal scientific agents, heterogeneous-agent collaboration, context-dependent skill auditing, reference-state-aligned evaluation, and graph learning. I have first-author work accepted at ICANN 2026 as an Oral Presentation and published in <em>Information</em>.</p>
+          <div class="badge-row">
+            <span class="badge">ICANN 2026 Oral</span>
+            <span class="badge">2 First-Author Accepted / Published Papers</span>
+            <span class="badge">Multimodal Scientific Agents · Trustworthy Skill Reuse</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="research">
+        <h2 class="section-title">Research Directions</h2>
+        <div class="section-body">
+          <div class="direction">
+            <p class="direction-name">Evidence-Grounded Scientific Agents</p>
+            <p class="direction-q">How can scientific agents generate conclusions that remain traceable to multimodal evidence?</p>
+            <p>I study agentic workflows that jointly reason over scientific figures, captions, document context, and provenance. My current focus is on claim-level evidence grounding, reproducible context construction, uncertainty representation, and human-verifiable scientific analysis.</p>
+            <p class="direction-work">Representative work: PaperFigureScout · evaluation under evolving knowledge states</p>
+          </div>
+          <div class="direction">
+            <p class="direction-name">Trustworthy Skill and Memory Reuse</p>
+            <p class="direction-q">When should an agent reuse, revalidate, or discard a learned skill or memory?</p>
+            <p>I investigate how executable skills and agent-generated artifacts depend on task context, tool permissions, code state, and prior execution evidence. I am particularly interested in evidence-gated skill promotion, dependency-aware invalidation, heterogeneous-agent review, and safe fallback under changing environments.</p>
+            <p class="direction-work">Representative work: Agent Plane · SkillCraft</p>
+          </div>
+          <div class="direction">
+            <p class="direction-name">Learning Systems under Evolving States</p>
+            <p class="direction-q">How should learning systems update, forget, and evaluate when their underlying state continuously changes?</p>
+            <p>I study state consistency, dependency-aware reuse, representation-level auditing, and privacy risks in evolving graph and knowledge systems. A recurring question is whether apparent output-level stability reflects genuine internal-state correctness.</p>
+            <p class="direction-work">Representative work: Federated Illusion · representation-level privacy auditing</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="publications">
+        <h2 class="section-title">Publications</h2>
+        <div class="section-body">
+          <div class="publications">
+            <ol class="bibliography">
+              <li>
+                <div class="pub-row">
+                  <div class="pub-content">
+                    <div class="title">Auditing Context-Dependent Legitimation of Malicious Skills in Claude Code</div>
+                    <div class="author"><strong>Haoke Han</strong>, Zhenzhen Xie, Junjie Pang</div>
+                    <div class="periodical"><em><strong>ICANN 2026 · Oral Presentation</strong></em></div>
+                    <div class="links">
+                      <a href="https://github.com/Clay-HHK/skillcraft-audit">Code</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="pub-row">
+                  <div class="pub-content">
+                    <div class="title">Federated Illusion: Multi-Level Geometric Privacy Audit for Federated Graph Unlearning</div>
+                    <div class="author"><strong>Haoke Han</strong>, Yan Huang, Zhenzhen Xie, Junjie Pang</div>
+                    <div class="periodical"><em><strong>Information, 2026</strong></em></div>
+                    <div class="links">
+                      <a href="https://github.com/Clay-HHK/federated-graph-unlearning-mia">Code</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="selected">
+        <h2 class="section-title">Selected Research &amp; Systems</h2>
+        <div class="section-body">
+          <div class="work-card">
+            <div class="work-head">
+              <span class="work-title">PaperFigureScout</span>
+              <span class="card-links"><a href="https://github.com/Clay-HHK/PaperFigureScout">Code</a></span>
+            </div>
+            <div class="badge-row">
+              <span class="badge">Multimodal Scientific Agents</span>
+              <span class="badge">Evidence Grounding</span>
+              <span class="badge">Open Source</span>
+            </div>
+            <p class="work-blurb">An evidence-grounded multimodal research agent for scientific figures. It aligns figures with captions and versioned text spans, generates structured scientific semantics, and requires claim-level evidence bindings to pass identity- and version-aware verification before persistence.</p>
+          </div>
+          <div class="work-card">
+            <div class="work-head">
+              <span class="work-title">Agent Plane / HACP</span>
+              <span class="card-links"><a href="https://github.com/Clay-HHK/agent-plane">Code</a></span>
+            </div>
+            <div class="badge-row">
+              <span class="badge">Heterogeneous Agents</span>
+              <span class="badge">Skill Lifecycle</span>
+              <span class="badge">Open Source</span>
+            </div>
+            <p class="work-blurb">A state-grounded collaboration plane for heterogeneous coding agents. It combines isolated workspaces, versioned proposals, dependency freshness checks, heterogeneous review, atomic merging, and evidence-gated skill invalidation and revalidation.</p>
+          </div>
+          <div class="work-card">
+            <div class="work-head">
+              <span class="work-title">SkillCraft</span>
+              <span class="card-links"><a href="https://github.com/Clay-HHK/skillcraft-audit">Code</a></span>
+            </div>
+            <div class="badge-row">
+              <span class="badge">ICANN 2026 Oral</span>
+              <span class="badge">Agent Skill Security</span>
+              <span class="badge">First Author</span>
+            </div>
+            <p class="work-blurb">Audits how executable agent skills change behavior across task-trust contexts. It constructs controlled skills and multi-stage attack chains to distinguish malicious intent from successful execution under different operational contexts.</p>
+          </div>
+          <div class="work-card">
+            <div class="work-head">
+              <span class="work-title">Federated Illusion</span>
+              <span class="card-links"><a href="https://github.com/Clay-HHK/federated-graph-unlearning-mia">Code</a></span>
+            </div>
+            <div class="badge-row">
+              <span class="badge">Information 2026</span>
+              <span class="badge">Graph Learning</span>
+              <span class="badge">First Author</span>
+            </div>
+            <p class="work-blurb">Studies representation-level privacy leakage in federated graph unlearning, showing that output-level confidence similarity may coexist with distinguishable geometric residuals in embedding space.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="systems">
+        <h2 class="section-title">Open-source Systems</h2>
+        <div class="section-body">
+          <div class="work-card compact">
+            <div class="work-head">
+              <span class="work-title">CompanyAgent</span>
+              <span class="card-links"><a href="https://github.com/Clay-HHK/CompanyAgent">Code</a></span>
+            </div>
+            <p class="work-blurb">A multi-agent orchestration framework with complexity-aware routing, DAG planning, hierarchical memory, and execution feedback.</p>
+          </div>
+          <div class="work-card compact">
+            <div class="work-head">
+              <span class="work-title">Toss</span>
+              <span class="card-links"><a href="https://github.com/Clay-HHK/toss">Code</a></span>
+            </div>
+            <p class="work-blurb">An agent-native artifact distribution tool with MCP integration, shared workspaces, and provenance-aware synchronization.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="news">
+        <h2 class="section-title">News</h2>
+        <div class="section-body">
+          <ul class="news-list">
+            <li><span class="news-date">Jul 2026</span><span class="news-text">Released PaperFigureScout, an evidence-grounded multimodal scientific-agent research system.</span></li>
+            <li><span class="news-date">Jul 2026</span><span class="news-text">Released Agent Plane, a state-grounded collaboration plane for heterogeneous coding agents.</span></li>
+            <li><span class="news-date">2026</span><span class="news-text">SkillCraft accepted to ICANN 2026 as an Oral Presentation.</span></li>
+            <li><span class="news-date">2026</span><span class="news-text">Federated Illusion published in <em>Information</em>.</span></li>
           </ul>
-          <p>As first author, I have work accepted at ICANN 2026 and MDPI <em>Information</em>.</p>
-          <p>I want to be part of shaping how AI systems think, remember, and forget, not just as a user, but as someone who builds the foundations.</p>
         </div>
       </div>
 
@@ -118,69 +272,6 @@
                 <p class="exp-period">2023.09 - Present</p>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="section" id="publications">
-        <h2 class="section-title">Publications</h2>
-        <div class="section-body">
-          <div class="publications">
-            <ol class="bibliography">
-              <li>
-                <div class="pub-row">
-                  <div class="pub-content">
-                    <div class="title">Auditing Context-Dependent Legitimation of Malicious Skills in Claude Code</div>
-                    <div class="author"><strong>Haoke Han</strong>, Zhenzhen Xie, Junjie Pang</div>
-                    <div class="periodical"><em><strong>ICANN 2026 (CCF-C), Oral.</strong></em></div>
-                    <div class="links">
-                      <a href="https://github.com/Clay-HHK/skillcraft-audit">Code</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="pub-row">
-                  <div class="pub-content">
-                    <div class="title">Federated Illusion: Multi-Level Geometric Privacy Audit for Federated Graph Unlearning</div>
-                    <div class="author"><strong>Haoke Han</strong>, Yan Huang, Zhenzhen Xie, Junjie Pang</div>
-                    <div class="periodical"><em><strong>Information (MDPI), Accepted.</strong></em></div>
-                    <div class="links">
-                      <a href="https://github.com/Clay-HHK/federated-graph-unlearning-mia">Code</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ol>
-          </div>
-        </div>
-      </div>
-
-      <div class="section" id="projects">
-        <h2 class="section-title">Projects</h2>
-        <div class="section-body">
-          <div class="card project-card">
-            <a href="https://github.com/Clay-HHK/toss">Toss</a>: A terminal-native, single-command distribution tool for non-source artifacts produced by AI coding agents. Built on a Cloudflare Worker serverless backend with peer-to-peer delivery, group broadcast, and shared-space sync, natively integrating MCP and Claude Code, and shipped via npm, Docker, and uv.
-          </div>
-          <div class="card project-card">
-            <a href="https://github.com/Clay-HHK/CompanyAgent">Company Agent</a>: A multi-agent collaboration framework modeled after company organizational structures. It routes tasks across three tiers by complexity, decomposes complex tasks into a DAG for parallel execution, and supports multi-model configuration, hierarchical memory, and an experience-feedback loop with a React-based execution visualizer.
-          </div>
-          <div class="card project-card">
-            <a href="https://github.com/Clay-HHK/PaperFigureScout">PaperFigureScout</a>: A local-first research workspace for discovering, filtering, and analyzing non-experimental figures from related papers. Given a topic, draft, PDF, or LaTeX project, it retrieves similar work through OpenAlex, Semantic Scholar, and arXiv, classifies Introduction and Method figures by rhetorical role, and produces a transferable design brief for an original figure rather than a copy of the source.
-          </div>
-          <div class="card project-card">
-            <a href="https://github.com/Clay-HHK/agent-plane">Agent Plane</a>: A collaboration runtime that lets several people, each running their own coding agent such as Claude Code or Codex, work on one shared codebase without corrupting each other's work. Agents execute in isolated Git worktrees, submit versioned proposals, and reach the canonical branch only after freshness checks, validation, optional cross-agent review, and an atomic compare-and-swap merge.
-          </div>
-        </div>
-      </div>
-
-      <div class="section" id="github">
-        <h2 class="section-title">GitHub Activity</h2>
-        <div class="section-body">
-          <div class="card">
-            <a href="https://github.com/Clay-HHK" title="Clay-HHK on GitHub">
-              <img src="https://ghchart.rshah.org/Clay-HHK" alt="Haoke Han's GitHub contribution chart" style="width:100%;height:auto;display:block;">
-            </a>
           </div>
         </div>
       </div>
@@ -208,8 +299,9 @@
           </div>
         </div>
       </div>
+
       <div class="section" id="interests">
-        <h2 class="section-title">Interests</h2>
+        <h2 class="section-title">Outside Research</h2>
         <div class="section-body">
           <p>Outside of research, I enjoy cycling, hiking, and running. In May 2026, I completed a circumnavigation of Mt. Laoshan in Qingdao, 85 km with 1,030 m of elevation gain over seven hours.</p>
           <div style="margin-top:0.8rem;">
@@ -224,8 +316,6 @@
     <footer class="site-footer">
       <p>
         &copy; 2026 Haoke Han. All rights reserved.
-        <br>
-        <span class="template-credit"><a href="https://github.com/wzsyyh/luka-homepage-template">Luka Homepage Template</a> by <a href="https://wzsyyh.github.io/">Yuheng Yang</a></span>
       </p>
     </footer>
   </div>
@@ -233,6 +323,8 @@
   <script src="assets/js/scale.fix.js"></script>
   <script>
     (function() {
+      document.documentElement.classList.add('is-js');
+
       const themeToggle = document.getElementById('themeToggle');
       const icon = themeToggle.querySelector('i');
 

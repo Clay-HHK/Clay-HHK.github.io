@@ -109,10 +109,24 @@ body.theme-luka .nav-container {
   justify-content: space-between;
 }
 
+body.theme-luka .nav-left {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  min-width: 0;
+  overflow-x: auto;
+}
+
 body.theme-luka .nav-left a {
   color: var(--luka-text);
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
+  white-space: nowrap;
+}
+
+body.theme-luka .nav-left a:hover {
+  color: var(--luka-accent);
+  filter: none;
 }
 
 body.theme-luka .theme-toggle {
@@ -143,7 +157,7 @@ body.theme-luka .wrapper {
 }
 
 body.theme-luka .sidebar {
-  width: 320px;
+  width: 260px;
   flex-shrink: 0;
   position: fixed;
   top: 60px;
@@ -172,11 +186,18 @@ body.theme-luka .image.avatar {
 }
 
 body.theme-luka .image.avatar img {
-  width: 220px;
-  height: 220px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 6px 24px var(--luka-shadow);
+}
+
+body.theme-luka .site-role {
+  margin: 0 0 14px;
+  color: var(--luka-secondary);
+  font-size: 12.5px;
+  line-height: 1.5;
 }
 
 body.theme-luka .site-name {
@@ -255,20 +276,31 @@ body.theme-luka .visitor-card-body {
 body.theme-luka .content {
   flex: 1;
   min-width: 0;
-  margin-left: 320px;
+  margin-left: 260px;
   padding: 120px 40px 80px 60px;
 }
 
 body.theme-luka .section {
   margin-bottom: 44px;
+}
+
+html.is-js body.theme-luka .section {
   opacity: 0;
   transform: translateY(12px);
   transition: opacity 0.45s ease, transform 0.45s ease;
 }
 
-body.theme-luka .section.visible {
+html.is-js body.theme-luka .section.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.is-js body.theme-luka .section {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
 
 body.theme-luka .section-title {
@@ -433,7 +465,7 @@ body.theme-luka .award-text {
 body.theme-luka .site-footer {
   width: 100%;
   flex-basis: 100%;
-  padding: 32px 24px 40px 380px;
+  padding: 32px 24px 40px 320px;
   text-align: center;
 }
 
@@ -457,6 +489,161 @@ body.theme-luka h3,
 body.theme-luka h4,
 body.theme-luka strong {
   color: var(--luka-text);
+}
+
+/* --- Restructure components: hero, badges, directions, work cards, news --- */
+
+body.theme-luka .hero-thesis {
+  margin: 0 0 18px;
+  color: var(--luka-text);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -0.2px;
+}
+
+body.theme-luka .badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+body.theme-luka .badge {
+  display: inline-block;
+  padding: 4px 11px;
+  border: 1px solid var(--luka-border);
+  border-radius: 999px;
+  background: var(--luka-social-bg);
+  color: var(--luka-accent);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+}
+
+body.theme-luka .direction {
+  margin-bottom: 22px;
+  padding-left: 16px;
+  border-left: 3px solid var(--luka-accent);
+}
+
+body.theme-luka .direction:last-child {
+  margin-bottom: 0;
+}
+
+body.theme-luka .direction .direction-name {
+  margin: 0 0 4px;
+  color: var(--luka-text);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+body.theme-luka .direction .direction-q {
+  margin: 0 0 8px;
+  color: var(--luka-accent);
+  font-size: 14.5px;
+  font-style: italic;
+  line-height: 1.55;
+}
+
+body.theme-luka .direction .direction-work {
+  margin: 6px 0 0;
+  color: var(--luka-secondary);
+  font-size: 13px;
+}
+
+body.theme-luka .work-card {
+  padding: 16px 18px;
+  margin-bottom: 16px;
+  border: 1px solid var(--luka-border);
+  border-radius: 12px;
+  background: var(--luka-social-bg);
+}
+
+body.theme-luka .work-card.compact {
+  padding: 13px 16px;
+  margin-bottom: 12px;
+}
+
+body.theme-luka .work-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+body.theme-luka .work-title {
+  color: var(--luka-text);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+body.theme-luka .card-links {
+  flex-shrink: 0;
+}
+
+body.theme-luka .card-links a {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+body.theme-luka .work-card .work-blurb {
+  margin: 10px 0 0;
+  color: var(--luka-text);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+body.theme-luka .work-card.compact .work-blurb {
+  color: var(--luka-secondary);
+}
+
+body.theme-luka .news-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body.theme-luka .news-list li {
+  display: flex;
+  gap: 14px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--luka-footer-border);
+}
+
+body.theme-luka .news-list li:last-child {
+  border-bottom: none;
+}
+
+body.theme-luka .news-date {
+  flex-shrink: 0;
+  width: 72px;
+  color: var(--luka-accent);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+body.theme-luka .news-text {
+  color: var(--luka-text);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  body.theme-luka .hero-thesis {
+    font-size: 20px;
+  }
+  body.theme-luka .nav-left {
+    gap: 20px;
+  }
+  body.theme-luka .nav-left a {
+    font-size: 13px;
+  }
+  body.theme-luka .news-list li {
+    flex-direction: column;
+    gap: 2px;
+  }
 }
 
 @media (max-width: 1080px) {
