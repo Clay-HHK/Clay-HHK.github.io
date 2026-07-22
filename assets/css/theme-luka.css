@@ -638,6 +638,13 @@ body.theme-luka .news-text {
   line-height: 1.6;
 }
 
+body.theme-luka .section-body .edu-advisors {
+  margin: 16px 0 0;
+  color: var(--luka-secondary);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
 @media (max-width: 640px) {
   body.theme-luka .hero-thesis {
     font-size: 20px;
