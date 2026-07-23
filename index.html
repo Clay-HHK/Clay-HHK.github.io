@@ -107,8 +107,8 @@
         <p class="hero-thesis">Evidence-Grounded Scientific Agents</p>
         <p class="hero-subtitle">Trustworthy reasoning and skill reuse in evolving environments.</p>
         <div class="section-body">
-          <p>I am an undergraduate student in Computer Science at Qingdao University. My research focuses on evidence-grounded agentic systems: how agents form auditable conclusions from multimodal scientific evidence, and how their skills, memory, and intermediate artifacts remain valid as tasks, tools, code, data, and knowledge evolve.</p>
-          <p>I build multimodal scientific agents and state-grounded collaboration systems, with a particular focus on evidence verification, trustworthy skill reuse, and evaluation under evolving knowledge and model states.</p>
+          <p>I am an undergraduate student in Computer Science at Qingdao University. I work on evidence-grounded agentic systems: getting agents to form conclusions that trace back to real evidence, and keeping their skills and memory reliable as tasks, code, and data change.</p>
+          <p>I build multimodal scientific agents and state-grounded collaboration systems. I care most about evidence verification, trustworthy skill reuse, and evaluation when the knowledge and models a system relies on keep changing.</p>
           <p>I have first-author work accepted at ICANN 2026 as an Oral Presentation and published in <em>Information</em>.</p>
           <div class="badge-row">
             <span class="badge">ICANN 2026 Oral</span>
@@ -124,21 +124,21 @@
           <div class="direction">
             <p class="direction-name">Evidence-Grounded Scientific Agents</p>
             <p class="direction-q">How can scientific agents generate conclusions that remain traceable to multimodal evidence?</p>
-            <p>I study agentic workflows that jointly reason over scientific figures, captions, document context, and provenance. My current focus is on claim-level evidence grounding, reproducible context construction, uncertainty representation, and human-verifiable scientific analysis.</p>
+            <p>I study agents that read scientific figures alongside their captions and surrounding text, and keep track of where each claim comes from. My current focus is tying claims to specific evidence, being honest about uncertainty, and making the analysis something a person can actually check.</p>
             <p class="direction-work">Public system: PaperFigureScout</p>
             <p class="direction-work">Current question: evaluation under evolving knowledge states</p>
           </div>
           <div class="direction">
             <p class="direction-name">Trustworthy Skill and Memory Reuse</p>
             <p class="direction-q">When should an agent reuse, revalidate, or discard a learned skill or memory?</p>
-            <p>I investigate how executable skills and agent-generated artifacts depend on task context, tool permissions, code state, and prior execution evidence. I am particularly interested in evidence-gated skill promotion, dependency-aware invalidation, heterogeneous-agent review, and safe fallback under changing environments.</p>
+            <p>I look at how an agent's saved skills and outputs depend on the context they were built in: the task, the tools it could use, the state of the code. When that context shifts, a skill that once worked can quietly turn wrong, so I study when a skill should be reused, when it should be revalidated or dropped, and how agents can check each other's work before trusting it.</p>
             <p class="direction-work">Public system: Agent Plane</p>
             <p class="direction-work">Published work: SkillCraft</p>
           </div>
           <div class="direction">
             <p class="direction-name">Learning Systems under Evolving States</p>
             <p class="direction-q">How should learning systems update, forget, and evaluate when their underlying state continuously changes?</p>
-            <p>I study state consistency, dependency-aware reuse, representation-level auditing, and privacy risks in evolving graph and knowledge systems. A recurring question is whether apparent output-level stability reflects genuine internal-state correctness.</p>
+            <p>I work on graph and knowledge systems that are constantly updated or asked to forget things, and I look at when reused results are still valid, what a model's internal representations really encode, and where privacy quietly leaks. A recurring question is whether a system that looks stable from the outside has actually stayed correct on the inside.</p>
             <p class="direction-work">Published work: Federated Illusion</p>
             <p class="direction-work">Current focus: representation-level and dependency-aware auditing</p>
           </div>
@@ -192,7 +192,7 @@
               <span class="badge">Evidence Grounding</span>
               <span class="badge">Open Source</span>
             </div>
-            <p class="work-blurb">An evidence-grounded multimodal research agent for scientific figures. It aligns figures with captions and versioned text spans, generates structured scientific semantics, and requires claim-level evidence bindings to pass identity- and version-aware verification before persistence.</p>
+            <p class="work-blurb">A research agent for the figures in scientific papers. It links each figure to its caption and the exact text that refers to it, and it will not save a conclusion unless that conclusion is tied to specific evidence it can point back to.</p>
           </div>
           <div class="work-card">
             <div class="work-head">
@@ -204,7 +204,7 @@
               <span class="badge">Skill Lifecycle</span>
               <span class="badge">Open Source</span>
             </div>
-            <p class="work-blurb">A state-grounded collaboration plane for heterogeneous coding agents. It combines isolated workspaces, versioned proposals, dependency freshness checks, heterogeneous review, atomic merging, and evidence-gated skill invalidation and revalidation.</p>
+            <p class="work-blurb">A collaboration runtime that lets several coding agents, each from a different vendor, work on one shared codebase without stepping on each other. Each agent works in its own copy and submits versioned changes that reach the main branch only after freshness checks, review, and an atomic merge, and any skill it learns is re-checked before reuse.</p>
           </div>
           <div class="work-card">
             <div class="work-head">
@@ -216,7 +216,7 @@
               <span class="badge">Agent Skill Security</span>
               <span class="badge">First Author</span>
             </div>
-            <p class="work-blurb">Audits how executable agent skills change behavior across task-trust contexts. It constructs controlled skills and multi-stage attack chains to distinguish malicious intent from successful execution under different operational contexts.</p>
+            <p class="work-blurb">Looks at how the same agent skill can behave very differently depending on how much the surrounding task is trusted. It builds controlled skills and multi-stage attack chains to tell genuinely malicious behavior apart from a skill that simply runs successfully in a high-trust setting.</p>
           </div>
           <div class="work-card">
             <div class="work-head">
@@ -228,7 +228,7 @@
               <span class="badge">Graph Learning</span>
               <span class="badge">First Author</span>
             </div>
-            <p class="work-blurb">Studies representation-level privacy leakage in federated graph unlearning, showing that output-level confidence similarity may coexist with distinguishable geometric residuals in embedding space.</p>
+            <p class="work-blurb">Studies privacy leakage in federated graph unlearning. Even when a model's outputs make it look like a data point has been forgotten, the geometry of its internal representations can still give that point away.</p>
           </div>
         </div>
       </div>
@@ -241,14 +241,14 @@
               <span class="work-title">CompanyAgent</span>
               <span class="card-links"><a href="https://github.com/Clay-HHK/CompanyAgent">Code</a></span>
             </div>
-            <p class="work-blurb">A multi-agent orchestration framework with complexity-aware routing, DAG planning, hierarchical memory, and execution feedback.</p>
+            <p class="work-blurb">A multi-agent framework modeled on a company org chart: it routes each task by difficulty, splits the hard ones into a DAG of subtasks, and keeps memory and feedback across runs.</p>
           </div>
           <div class="work-card compact">
             <div class="work-head">
               <span class="work-title">Toss</span>
               <span class="card-links"><a href="https://github.com/Clay-HHK/toss">Code</a></span>
             </div>
-            <p class="work-blurb">An agent-native artifact distribution tool with MCP integration, shared workspaces, and provenance-aware synchronization.</p>
+            <p class="work-blurb">A command-line tool for sharing the artifacts coding agents produce, with MCP support, shared workspaces, and history that follows each file.</p>
           </div>
         </div>
       </div>
